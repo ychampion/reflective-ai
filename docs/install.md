@@ -24,13 +24,12 @@ Public beta instructions will include:
 
 ## Current Status
 
-Reflective is currently in private development and dogfooding. There is no
-public install command to run yet.
+Reflective is currently invite-only. There is no public install command to run
+yet.
 
 Star or watch this repository to be notified when the public beta opens.
 
 ## What Not To Do
 
-Do not install from private source repository URLs, unofficial mirrors, or
-random package names claiming to be Reflective unless they are linked from this
-repository or an official Reflective channel.
+Use only install commands published in this repository or another official
+Reflective channel.

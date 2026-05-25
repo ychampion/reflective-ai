@@ -28,5 +28,5 @@ Write release notes with:
 
 ## Style
 
-Use plain language. Avoid hype, private implementation details, and claims that
-are not supported by release evidence.
+Use plain language. Avoid hype, unnecessary implementation details, and claims
+that are not supported by release evidence.

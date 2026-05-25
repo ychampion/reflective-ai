@@ -1,111 +1,93 @@
 # Reflective
 
-Reflective is a memory-native terminal coding harness for engineering teams.
+Reflective is a memory-native coding harness for teams using AI agents in the
+terminal.
 
-It is built around a simple belief: coding agents get much more useful when they
-understand the way a team actually ships. Not just the files in the repo, but
-the decisions, incidents, owners, deployment constraints, failed attempts, test
-recipes, and local rules that shape engineering work.
+Most coding agents can inspect a repository, run commands, and propose patches.
+Reflective is built for the next layer of work: helping agents understand the
+context a strong engineer would ask for before changing code.
 
-> Public availability is coming soon. Star this repo to follow releases,
-> installation instructions, public examples, and product updates.
+That context includes decisions, incidents, ownership, local conventions, test
+recipes, deployment constraints, failed attempts, and team-specific workflows.
+Reflective brings that knowledge into the coding session in a way that is
+reviewable, permission-aware, and reusable.
+
+> Reflective is coming soon. Star this repo to follow public updates and beta
+> availability.
 
 [![Status](https://img.shields.io/badge/status-coming_soon-111827?style=flat-square)](#status)
 [![Issues](https://img.shields.io/github/issues/ychampion/reflective-ai?style=flat-square)](https://github.com/ychampion/reflective-ai/issues)
 [![Discussions](https://img.shields.io/badge/discussions-open-2563eb?style=flat-square)](https://github.com/ychampion/reflective-ai/discussions)
 
-## What Reflective Is
+## Why Reflective
 
-Reflective is a CLI harness for agentic coding sessions. It is designed for
-developers and teams that want a terminal-native agent workflow with stronger
-context, safer execution, and reusable team knowledge.
+AI coding gets harder inside real teams. The agent needs to know more than the
+current prompt and the current file tree.
 
-Reflective focuses on:
+Reflective is designed around five product principles:
 
-- **Context before action**: compile permission-filtered context from the repo,
-  approved memory, decisions, incidents, and test recipes before an agent plans
-  or edits.
-- **Team memory**: turn useful traces, conventions, and lessons into reviewable
-  memory instead of losing them after each session.
-- **Skills and hooks**: make repeatable workflows explicit, auditable, and
-  shareable across a team.
-- **Evidence-based execution**: keep traces, outcomes, checkpoints, and
-  verification attached to work.
-- **Terminal-first ergonomics**: keep the primary workflow in the CLI, where
-  developers already inspect code, run tests, and review diffs.
+- **Context before action**: compile the relevant repo, memory, decision, and
+  test context before planning or editing.
+- **Memory that compounds**: preserve useful lessons from previous work so the
+  next session starts smarter.
+- **Explicit workflows**: make repeatable team practices available as skills
+  instead of relying on tribal knowledge.
+- **Controlled automation**: use hooks, permissions, checkpoints, and traces so
+  automated work stays inspectable.
+- **Terminal-native execution**: keep the workflow close to the tools engineers
+  already use to read code, run tests, and review diffs.
 
-## What This Repository Is
+## CLI Experience
 
-This is the public home for Reflective.
+Reflective is intended to be a focused CLI experience:
 
-Use this repository to:
+```bash
+refl
+```
 
-- follow release notes and changelogs;
-- learn what Reflective is and how it is different;
-- find installation instructions when public distribution opens;
-- open bugs, feedback, feature requests, and adoption questions;
-- share public skill and hook examples;
-- discuss workflows that should become first-class Reflective patterns.
+Inside a session, you describe the work in plain English. Reflective prepares
+context, plans against the actual repository, uses approved tools, records what
+happened, and reports verification evidence before calling work complete.
 
-## What This Repository Is Not
+Example workflows:
 
-This repository is not the private CLI source repository.
+- investigate a failing test with prior incident context;
+- ask which files and owners are relevant before making a risky change;
+- run a skill for release notes, migrations, or review prep;
+- use hooks to enforce local policy before write tools run;
+- turn a successful trace into reviewable team memory.
 
-Please do not post:
+## Core Surfaces
 
-- private code, logs, stack traces, secrets, or customer data;
-- internal implementation details from your company;
-- credentials, API keys, tokens, invite links, or private endpoints;
-- requests that require access to Reflective's internal source tree.
-
-Public examples in this repo should be generic, sanitized, and useful to teams
-without exposing proprietary information.
+| Surface | Purpose |
+| --- | --- |
+| `refl` | terminal entrypoint |
+| Memory | reviewed knowledge from past sessions, decisions, and incidents |
+| Skills | reusable workflows for common engineering tasks |
+| Hooks | local lifecycle checks and context injection |
+| Traces | evidence of actions, tool use, diffs, and verification |
 
 ## Status
 
-Reflective is currently in private development and dogfooding. The public repo
-is open now so developers can track the project, star it, ask questions, and
-shape the public beta.
+Reflective is currently invite-only. Public installation is coming soon.
 
-Public install commands will be published here when the beta opens.
+Public beta details, install commands, and release notes will be published in
+this repository.
 
-```bash
-# Coming soon
-# refl
-```
+## Learn More
 
-The intended command is `refl`.
-
-## Repository Map
-
-| Path | Purpose |
-| --- | --- |
-| [CHANGELOG.md](CHANGELOG.md) | Public release notes and notable updates |
-| [ROADMAP.md](ROADMAP.md) | Near-term product direction and public milestones |
-| [docs/overview.md](docs/overview.md) | Product thesis and core concepts |
-| [docs/install.md](docs/install.md) | Install and beta access notes |
-| [docs/skills-and-hooks.md](docs/skills-and-hooks.md) | Public explanation of skills and hooks |
-| [docs/feedback.md](docs/feedback.md) | How to file useful feedback |
-| [examples/skills](examples/skills) | Generic public skill examples |
-| [examples/hooks](examples/hooks) | Generic public hook examples |
+- [About Reflective](docs/about.md)
+- [Install status](docs/install.md)
+- [Skills and hooks](docs/skills-and-hooks.md)
+- [Feedback guide](docs/feedback.md)
+- [Changelog](CHANGELOG.md)
 
 ## Feedback
 
-Use GitHub Issues for actionable reports and GitHub Discussions for broader
-workflow questions.
+We are especially interested in workflows where existing coding agents lose
+important team context.
 
-- [Bug report](https://github.com/ychampion/reflective-ai/issues/new?template=bug_report.yml)
-- [Feature request](https://github.com/ychampion/reflective-ai/issues/new?template=feature_request.yml)
-- [Skill or hook proposal](https://github.com/ychampion/reflective-ai/issues/new?template=skill_or_hook.yml)
-- [General feedback](https://github.com/ychampion/reflective-ai/issues/new?template=feedback.yml)
-- [Discussions](https://github.com/ychampion/reflective-ai/discussions)
-
-Good feedback describes the workflow, the current friction, the desired
-outcome, and the constraints a real engineering team has to respect.
-
-## Why Star This Repo
-
-Star this repo if you want a serious terminal coding harness that is shaped
-around team context, not just prompt text. Stars help us understand public
-interest and make it easier for other developers to find Reflective when the
-beta opens.
+- [Share feedback](https://github.com/ychampion/reflective-ai/issues/new?template=feedback.yml)
+- [Request a workflow](https://github.com/ychampion/reflective-ai/issues/new?template=feature_request.yml)
+- [Propose a skill or hook](https://github.com/ychampion/reflective-ai/issues/new?template=skill_or_hook.yml)
+- [Start a discussion](https://github.com/ychampion/reflective-ai/discussions)

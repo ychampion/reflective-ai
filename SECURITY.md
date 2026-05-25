@@ -37,5 +37,4 @@ Do not paste:
 ## Scope
 
 This file covers the public Reflective repository and public distribution once
-available. The private implementation repository is not accessible through this
-repo.
+available.

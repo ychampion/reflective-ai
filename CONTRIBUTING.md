@@ -2,8 +2,8 @@
 
 Thanks for helping shape Reflective.
 
-This public repo is for product feedback, documentation, public examples,
-changelogs, and community workflow discussion. It is not the CLI source repo.
+This repo is for product feedback, documentation, public examples, changelogs,
+and community workflow discussion.
 
 ## Good Contributions
 
@@ -21,7 +21,6 @@ Helpful contributions include:
 Please check:
 
 - existing issues for duplicates;
-- the current [roadmap](ROADMAP.md);
 - the [install status](docs/install.md);
 - the [feedback guide](docs/feedback.md).
 
@@ -58,6 +57,5 @@ For docs:
 
 ## Maintainer Review
 
-Maintainers may close issues or PRs that are off-scope for this public repo,
-contain sensitive material, duplicate existing discussions, or request access to
-private implementation details.
+Maintainers may close issues or PRs that are off-scope, contain sensitive
+material, duplicate existing discussions, or request non-public details.

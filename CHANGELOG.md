@@ -1,19 +1,15 @@
 # Changelog
 
-All notable public updates for Reflective will be tracked here.
-
-This changelog is for public product updates, documentation, examples, beta
-access notes, and release announcements. It does not mirror private source-code
-history.
+Public updates for Reflective will be tracked here.
 
 ## Unreleased
 
-- Opened the public Reflective repository for updates, feedback, discussions,
-  and community examples.
+- Opened the public Reflective repository for product updates, feedback, and
+  community examples.
 - Added public issue templates for bugs, feature requests, feedback, and
   skill/hook proposals.
-- Added public documentation for the product thesis, repository boundaries,
-  installation status, and feedback process.
+- Added public documentation for the product thesis, installation status, and
+  feedback process.
 - Added generic examples for Reflective-style skills and hooks.
 
 ## Public Beta
