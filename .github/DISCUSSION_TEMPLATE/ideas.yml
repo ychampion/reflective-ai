@@ -1,0 +1,20 @@
+title: "[Idea]: "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: What workflow, use case, or public example should Reflective support?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: What developer or team problem does this solve?
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: What risk, privacy, or review boundary should apply?

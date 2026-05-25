@@ -1,0 +1,38 @@
+name: Skill or hook proposal
+description: Propose a reusable public workflow, skill, or hook pattern.
+title: "[Skill/Hook]: "
+labels: ["skills", "hooks"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Proposal type
+      options:
+        - Skill
+        - Hook
+        - Both
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow
+      description: What repeatable workflow should this support?
+    validations:
+      required: true
+  - type: textarea
+    id: trigger
+    attributes:
+      label: Trigger
+      description: When should it run or be selected?
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Boundaries and risks
+      description: What should it avoid? What requires human review?
+  - type: textarea
+    id: example
+    attributes:
+      label: Sanitized example
+      description: Use placeholders. Do not include private data.

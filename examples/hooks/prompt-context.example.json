@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/inject-team-context.sh",
+            "timeout_ms": 3000
+          }
+        ]
+      }
+    ]
+  }
+}

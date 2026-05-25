@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "write_file|edit_file|apply_patch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/guard-writes.sh",
+            "timeout_ms": 5000
+          }
+        ]
+      }
+    ]
+  }
+}

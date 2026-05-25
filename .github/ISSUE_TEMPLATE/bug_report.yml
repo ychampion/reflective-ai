@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a public Reflective bug or documented behavior that does not work.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, private source code, customer data, or unredacted logs.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What went wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use sanitized commands and data.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Reflective version or channel
+      placeholder: coming soon, beta build, or unknown
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: macOS/Linux/Windows, shell, terminal, Node version if relevant
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs or screenshots
+      description: Remove secrets, tokens, internal paths, endpoints, and private code.

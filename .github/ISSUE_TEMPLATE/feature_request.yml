@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest a capability or workflow Reflective should support.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What workflow is hard today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should Reflective make possible?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context the harness should understand
+      description: What repo, team, memory, test, hook, or skill context matters?
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk boundary
+      description: What should Reflective avoid doing automatically?
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Who is this for?
+      options:
+        - Solo developer
+        - Small team
+        - Engineering organization
+        - Unsure

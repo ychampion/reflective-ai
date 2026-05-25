@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussions
+    url: https://github.com/ychampion/reflective-ai/discussions
+    about: Ask broader workflow questions or share open-ended feedback.
+  - name: Security
+    url: https://github.com/ychampion/reflective-ai/security/policy
+    about: Read the security policy before reporting sensitive issues.
